@@ -12,6 +12,17 @@ https://github.com/BurakAhmet/Instant-Handwritten-Digit-Detection/assets/8978090
 
 For more details you can check [model_training.ipynb](https://github.com/BurakAhmet/Instant-Handwritten-Digit-Detection/blob/main/model_training.ipynb) file.
 
+## Usage
+1- Run the program.
+
+2- Draw digits on the canvas using the left mouse button.
+
+3- Release the mouse button to signal drawing completion.
+
+4- View the recognized digits alongside the original drawing.
+
+5- Press 'q' to quit the program or 'r' to clear the canvas.
+
 ## Technologies Used
 
 * Python 3: The project is developed using Python programming language.
