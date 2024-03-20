@@ -21,7 +21,7 @@ For more details you can check [model_training.ipynb](https://github.com/BurakAh
 
 4- View the recognized digits alongside the original drawing.
 
-5- Press 'q' to quit the program or 'r' to clear the canvas.
+5- Press "q" to quit the program or "r" to clear the canvas.
 
 ## Technologies Used
 
