@@ -1,4 +1,4 @@
-# Instant-Handwritten-Digit-Detection
+# Handwritten Digit Detection
 This project implements a handwritten digit detection system using OpenCV and TensorFlow's convolutional neural network (CNN) model. The goal of the project is to allow users to draw digits on a canvas, after which the program detects and recognizes the digits, displaying the result alongside the original drawing. 
 
 ## Preview
