@@ -16,6 +16,6 @@ For more details you can check [model_training.ipynb](https://github.com/BurakAh
 
 * Python 3: The project is developed using Python programming language.
 * TensorFlow: Used for Creating the model, training the data and making predictions.
-* OpenCV: Used for image preprocessing, visualization of results, user interface
+* OpenCV: Used for image preprocessing, visualization of results, user interface.
 * NumPy: Employed for array manipulation and normalization of input data.
 * Google Colab: Used for fast model training with GPUs.
