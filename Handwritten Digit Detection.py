@@ -3,7 +3,7 @@ import numpy as np
 from keras.models import load_model
 
 # Load the trained digit recognition model (replace with your model path)
-model = load_model('model/model.h5')
+model = load_model("model/model.h5")
 model.load_weights("model/model_weights.h5")
 
 # Define canvas dimensions
@@ -38,13 +38,13 @@ def draw_on_canvas(event, x, y, flags, param):
 
 
 # Set up the window and mouse callback
-cv2.namedWindow('Digit Recognition Canvas')
-cv2.setMouseCallback('Digit Recognition Canvas', draw_on_canvas)
+cv2.namedWindow("Digit Recognition Canvas")
+cv2.setMouseCallback("Digit Recognition Canvas", draw_on_canvas)
 
 is_quit = False
 while True:
     # Display the canvas (always show the original canvas with digits)
-    cv2.imshow('Digit Recognition Canvas', canvas)
+    cv2.imshow("Digit Recognition Canvas", canvas)
 
     # Press 'q' to quit
     key = cv2.waitKey(1) & 0xFF
@@ -96,20 +96,18 @@ while True:
             cv2.rectangle(temp_canvas, (x, y), (x+w, y+h), (0, 0, 255), 2)
             cv2.putText(temp_canvas, str(digit), (x+5, y+20), cv2.FONT_HERSHEY_SIMPLEX, 0.7, (0, 0, 255), 2)
 
-        # Display the temporary canvas with rectangles
-        cv2.imshow('Digit Recognition Canvas', temp_canvas)
+        cv2.imshow("Digit Recognition Canvas", temp_canvas)
 
         # Wait for a key press OR until the user starts drawing again
         while not drawing:
             key = cv2.waitKey(1) & 0xFF
-            if key == ord('q'):
+            if key == ord("q"):
                 is_quit = True
-                break  # Quit if 'q' is pressed
-            elif key == ord('r'):
+                break  # Quit if "q" is pressed
+            elif key == ord("r"):
                 canvas[:] = (0, 0, 0)
                 break
 
         drawing_complete = False  # Reset for the next digit
 
-# Release resources
 cv2.destroyAllWindows()
